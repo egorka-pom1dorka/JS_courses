@@ -27,7 +27,7 @@ while(errorLog){
 	}
 }
 
-var sign = prompt("Input sign");
+var sign = prompt("Input sign(+, -, *, /)");
 
 switch(sign){
 	case '+':
