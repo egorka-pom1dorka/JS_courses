@@ -1,6 +1,6 @@
 function getFactorial(n){
 	if(n == 0 || n == 1){
-		return n;
+		return 1;
 	}
 
 	var result = 1;
@@ -14,7 +14,7 @@ function getFactorial(n){
 
 function getDoubleFactorial(n){
 	if(n == 0 || n == 1){
-		return n;
+		return 1;
 	}
 
 	var result = 1, i;
@@ -37,7 +37,7 @@ var x = prompt("Input X (|X| < 1)");
 var answer = x * 1;
 
 for(var i = 1; i < n; i++){
-	answer += getDoubleFactorial(2 * n - 1) / getFactorial(2 * i) * Math.pow(x, 2 * n -1) / (2 * n - 1);
+	answer += (getDoubleFactorial(2 * i - 1) / getFactorial(2 * i)) * (Math.pow(x, 2 * i -1) / (2 * i - 1));
 }
 
 alert("Arcsin " + x + ' is ' + answer);
