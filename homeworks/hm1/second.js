@@ -36,7 +36,7 @@ var n = prompt("Input N");
 var x = prompt("Input X (|X| < 1)");
 var answer = x * 1;
 
-for(var i = 1; i < n; i++){
+for(var i = 1; i <= n; i++){
 	answer += (getDoubleFactorial(2 * i - 1) / getFactorial(2 * i)) * (Math.pow(x, 2 * i -1) / (2 * i - 1));
 }
 
