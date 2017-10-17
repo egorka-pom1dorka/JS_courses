@@ -103,18 +103,20 @@ var _x = {
 	}
 };
 
+var outputWorker = function(){
+	console.log("Name: " + this.name + ";\n" 
+		+ "Age: " + this.age + ";\n" 
+		+ "WorkPlace: " + this.workPlace + ";\n"
+		+ "Salary: " + this.salary + ";\n" 
+		+ "WorkTime: " + this.workTime + ";\n");
+}
+
 var Vitaliy = {
 	name: "Vitaliy", 
 	age: 23, workPlace: "McDonalds", 
 	salary: 800, 
 	workTime: 13, 
-	print: function(){
-		console.log("Name: " + this.name + ";\n" 
-			+ "Age: " + this.age + ";\n" 
-			+ "WorkPlace: " + this.workPlace + ";\n"
-			+ "Salary: " + this.salary + ";\n" 
-			+ "WorkTime: " + this.workTime + ";\n");
-	}
+	print: outputWorker
 };
 var Egor = {
 	name: "Egor",
@@ -122,13 +124,7 @@ var Egor = {
 	workPlace: "It",
 	salary: 1,
 	workTime: 13,
-	print: function(){
-		console.log("Name: " + this.name + ";\n" 
-			+ "Age: " + this.age + ";\n" 
-			+ "WorkPlace: " + this.workPlace + ";\n"
-			+ "Salary: " + this.salary + ";\n" 
-			+ "WorkTime: " + this.workTime + ";\n");
-	}
+	print: outputWorker
 };
 var Ivan = {
 	name: "Ivan",
@@ -136,13 +132,7 @@ var Ivan = {
 	workPlace: "McDonalds",
 	salary: 1000,
 	workTime: 1,
-	print: function(){
-		console.log("Name: " + this.name + ";\n" 
-			+ "Age: " + this.age + ";\n" 
-			+ "WorkPlace: " + this.workPlace + ";\n"
-			+ "Salary: " + this.salary + ";\n" 
-			+ "WorkTime: " + this.workTime + ";\n");
-	}
+	print: outputWorker
 };
 var Vasiliy = {
 	name: "Vasiliy",
@@ -150,21 +140,13 @@ var Vasiliy = {
 	workPlace: "BSU",
 	salary: 500,
 	workTime: 10,
-	print: function(){
-	console.log("Name: " + this.name + ";\n" 
-		+ "Age: " + this.age + ";\n" 
-		+ "WorkPlace: " + this.workPlace + ";\n"
-		+ "Salary: " + this.salary + ";\n" 
-		+ "WorkTime: " + this.workTime + ";\n");
-	}
+	print: outputWorker
 };
 
 _x.addOrFireWorker(Vasiliy);
 _x.addOrFireWorker(Ivan);
 _x.addOrFireWorker(Egor);
 _x.addOrFireWorker(Vitaliy);
-
-_x.addOrFireWorker("Vasiliy");
 
 _x.showWorkersSortingBySalaryAndSummarySalary();
 _x.showMaxMinAvgSalary();
