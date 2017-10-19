@@ -10,9 +10,7 @@ for(var i = 0; i < 10; i++){
 			input.innerText = '';
 			flag = false;
 		}
-		if(!(this.outerText == 0 && !input.outerText.length)){
-			input.innerText = input.outerText + this.innerText;
-		}
+		input.innerText = input.outerText + this.innerText;
 	});
 }
 
@@ -56,7 +54,12 @@ operators.forEach(function(e){
 	e.addEventListener('click', function(){
 		if(e.outerText != '='){
 			if(input.outerText.length){
-				first = input.outerText;
+				if(result.outerText.length){
+					first = answer;
+					input.innerText = answer;
+				}else{
+					first = input.outerText;
+				}
 				sign = e.outerText;
 				flag = true;
 			}
@@ -92,8 +95,8 @@ operators.forEach(function(e){
 				first = input.outerText;
 			}
 		}
-		console.log(first);
-		console.log(sign);
-		console.log(second);
+		// console.log(first);
+		// console.log(sign);
+		// console.log(second);
 	});
 });
