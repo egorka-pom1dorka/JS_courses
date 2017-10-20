@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 7</title>
+	<style type="text/css">
+		#simple-div{
+			width: 1000px;
+			height: 500px;
+			margin: 0 auto;
+			background-color: #ccc;
+		}
+		#note{
+			width: 100px;
+			margin: 10px auto;
+		}
+		#window{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+		}
+		#inner{
+			width: 40vw;
+			height: 30vh;
+			background-color: #ccc;
+			margin: 10vh auto;
+		}
+		#window.opened{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div id='simple-div'>	</div>
+	<p id='note'></p> -->
+
+	<!-- <a href="https://google.com" id='link'>Google</a> -->
+	
+	<button type='button' id='btn'>Open</button>
+	<div id="window">
+		<div id="inner"></div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
