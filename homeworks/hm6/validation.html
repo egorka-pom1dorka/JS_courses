@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 6</title>
+	<style>
+		.incorrect{
+			outline: 1px solid red;
+		}
+		.correct{
+			outline: 1px solid mediumspringgreen;
+		}
+		#registration{
+			width: 480px;
+		    margin: 0 auto;
+		}
+		label{
+			clear: both;
+			width: 100%;
+			display: block;
+	        padding: 5px 0;
+		}
+		label > input{
+			width: 280px;
+			float: right;
+		    font-family: sans-serif;
+		    font-size: 14px;
+		    padding: 8px 10px
+		}
+		#submit{
+		    padding: 10px 20px;
+		    margin: 20px 185px;
+		}
+		#error-log{
+			text-align: center;
+			color: red;
+		}
+		#success-log{
+			text-align: center;
+			color: green;
+		}
+		.hidden{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	
+	<form id='registration'>
+		<label for="">
+			<span>Имя</span>
+			<input type="text" id="userName" placeholder="Артименя Егор">
+		</label>
+		<label for="">
+			<span>Телефон</span>
+			<input type="text" id="phone" placeholder="+375 33 000 00 00">
+		</label>
+		<label for="">
+			<span>Электронный адрес</span>
+			<input type="text" id="e-mail" placeholder="Ivanov@example.com">
+		</label>
+		<label for="">
+			<span>Web - site</span>
+			<input type="text" id="web-site" placeholder="https://google.com">
+		</label>
+		<label for="">
+			<span>Возраст</span>
+			<input type="text" id="age" placeholder="18">
+		</label>
+		<button id='submit' type='button'>Отправить</button>
+	</form>
+
+	<script type="text/javascript" src="validation.js"></script>
+</body>
+</html>
