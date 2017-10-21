@@ -31,19 +31,25 @@ document.getElementById('clear').addEventListener('click', function(){
 document.getElementById('Mr+').addEventListener('click', function(){
 	result.innerText = '';
 	if(input.outerText.length){
-		memory = input.outerText;
-		input.innerText = '';
+		memory = +memory + +input.outerText;
+		input.innerText = memory;
 	}
 });
 
 document.getElementById('Mr-').addEventListener('click', function(){
 	result.innerText = '';
-	memory = '';
+	memory -= input.outerText;
+	input.innerText = memory;
 });
 
 document.getElementById('Mr').addEventListener('click', function(){
 	result.innerText = '';
 	input.innerText = memory;
+});
+
+document.getElementById('Mc').addEventListener('click', function(){
+	result.innerText = '';
+	memory = '';
 });
 
 document.querySelectorAll('.operations > *').forEach(function(e){
