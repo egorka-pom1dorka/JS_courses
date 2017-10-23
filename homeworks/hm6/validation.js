@@ -78,6 +78,6 @@ submit.addEventListener('click', function(e){
 		alert('Success');
 	}else{
 		alert('Error, check input data');
+		e.preventDefault();
 	}
-	e.preventDefault();
 });
