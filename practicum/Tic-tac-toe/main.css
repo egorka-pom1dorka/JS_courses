@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	font-family: "Verdana";
+}
+
+.cross{
+	background-image: url('cross.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.circle{
+	background-image: url('circle.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.overlay{
+	display: none;
+	position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: 14;
+    top: 0;
+    background-color: darkslategrey;
+    color: white;
+    left: 0;
+}
+
+.total{
+	text-align: center;
+	display: none;
+	position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: 20;
+    top: 0;
+    color: cornflowerblue;
+    left: 0;
+}
+
+.total > p{
+	cursor: pointer;
+	font-size: 28px;
+    margin-top: 20px;
+}
+
+.starting{
+	width: 420px;
+    margin: 30vh auto;
+    text-align: center;
+    font-size: 26px;
+}
+
+.category{
+	font-size: 22px;
+    padding: 10px;
+}
+
+.category:hover{
+	cursor: pointer;
+    color: cornflowerblue;
+}
+
+.active{
+	display: block;
+}
+
+table{
+    margin: 70px auto;
+	width: 600px;
+	border-collapse: collapse;
+}
+
+td{
+	width: 200px;
+    border: 1px solid darkslategrey;
+    height: 200px;
+}
