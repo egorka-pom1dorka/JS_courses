@@ -1,0 +1,103 @@
+#message{
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 30%;
+    height: 70px;
+    border: 1px solid;
+    width: 40%;
+    color: black;
+    text-align: center;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+}
+#totals{
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    right: 32px;
+    top: 30px;
+}
+#time{
+    color: chocolate;
+	cursor: pointer;
+	text-align: center;
+    font-size: 18px;
+    position: fixed;
+    right: 32px;
+    top: 65px;
+    z-index: 999;
+}
+.cards{
+	width: 94%;
+	margin: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card{
+	cursor: pointer;
+	margin: 5px;
+	width: 180px;
+	height: 200px;
+	perspective: 220px;
+	transition: all 0.2s;
+	background: url('../img/incognito.jpg');
+}
+.open{
+	background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+	transform: rotate3d(0, 1, 0, 180deg);
+}
+#blocked{
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+.active{
+	display: block !important;
+}
+.ablameyko{
+	background-image: url('../img/Ablameyko-e1507061910297.jpg');
+}
+.derushev{
+	background-image: url('../img/Deryushev.jpg');	
+} 
+.galkin{
+	background-image: url('../img/Galkin-Igor-Mihajlovich.jpg');	
+}
+.ignatenko{
+	background-image: url('../img/ignatenko.jpg');
+}
+.kremen{
+	background-image: url('../img/kremen-ev.jpg');
+}
+.listopad{
+	background-image: url('../img/listopad.jpg');
+}
+.lulkin{
+	background-image: url('../img/lulkin.jpg');
+}
+.nagorniy{
+	background-image: url('../img/nagorny-yuri-evgenievich.jpg');
+}
+.perez{
+	background-image: url('../img/perez_tchernov.jpg');
+}
+.romanchik{
+	background-image: url('../img/romanchik-1.jpg');
+}
+.shibut{
+	background-image: url('../img/shibut.jpg');
+}
+.velchenko{
+	background-image: url('../img/velchenko.jpg');
+}
