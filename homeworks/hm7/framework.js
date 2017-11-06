@@ -1,9 +1,9 @@
-var D = {
+var _ = {
 	append: function(e, e2){
 		e.appendChild(e2);
 	}
 	,prepend: function(e, e2){
-		e.insertBefore(e2);
+		e.insertBefore(e2, e.firstElementChild);
 	}
 	,remove: function(e){
 		e.remove();
