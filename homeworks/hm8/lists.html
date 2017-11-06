@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lists</title>
+	<style type="text/css">
+		#list .sublist{
+			display: none;
+		}
+		#list .visible{
+			display: block;
+		}
+		li{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	
+	<ul id="list">
+		<li>
+			first
+			<ul class="sublist">
+				<li>
+					first
+					<ul class="sublist">
+						<li>first</li>
+						<li>
+							second
+							<ul class="sublist">
+								<li>first</li>
+								<li>secodn</li>
+								<li>third</li>
+							</ul>
+						</li>
+						<li>third</li>
+					</ul>
+				</li>
+				<li>second</li>
+			</ul>
+		</li>
+		<li>
+			second
+			<ul class="sublist">
+				<li>first</li>
+				<li>second</li>
+			</ul>
+		</li>
+		<li>
+			third
+			<ul class="sublist">
+				<li>first</li>
+				<li>second</li>
+				<li>third</li>
+				<li>fourth</li>
+			</ul>
+		</li>
+		<li>
+			fourth
+			<ul class="sublist">
+				<li>
+					first
+					<ul class="sublist">
+						<li>first</li>
+						<li>second</li>
+						<li>third</li>
+					</ul>
+				</li>
+				<li>second</li>
+				<li>third</li>
+				<li>fourth</li>
+			</ul>
+		</li>
+	</ul>
+
+	<script type="text/javascript" src="lists.js"></script>
+</body>
+</html>
