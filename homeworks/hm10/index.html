@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 10</title>
+</head>
+<body>
+	
+	<div class="market">
+		<h2>Это рынок</h2>
+		<div class='goods'>
+			<div class="any">
+				<h3>Создать новый произвольный товар</h3>
+				<form action="">
+					<label>
+						<span>Название</span>
+						<input type="text" id='title' required="">
+					</label>
+					<label>
+						<span>Тип</span>
+						<input type="text" id='type' required="">
+					</label>
+					<label>
+						<span>Цена</span>
+						<input type="text" id='price' required="">
+					</label>
+					<input type="button" id='any-send' value="Добавить">
+				</form>
+			</div>
+			<div class="food">
+				<h3>Создать новый продовольственный товар</h3>
+				<form action="">
+					<label>
+						<span>Название</span>
+						<input type="text" id='food-title' required="">
+					</label>
+					<label>
+						<span>Тип</span>
+						<input type="text" id='food-type' required="">
+					</label>
+					<label>
+						<span>Цена</span>
+						<input type="text" id='food-price' required="">
+					</label>
+					<label>
+						<span>До какого времени годен</span>
+						<input type="text" id='food-before' required="" placeholder="2017-11-21 00:00:00">
+					</label>
+					<input type="button" id='food-send' value="Добавить">
+				</form>
+			</div>
+
+			<div id="goods-container"></div>
+
+		</div>
+
+		<div class="shops">
+			<h3>Создать новый магазин</h3>
+			<form action="">
+				<label>
+					<span>Название</span>
+					<input type="text" id='shop-title' required="">
+				</label>
+				<label>
+					<span>Адресс</span>
+					<input type="text" id='shop-address' required="">
+				</label>
+				<label>
+					<span>Наценка</span>
+					<input type="text" id='shop-coef' required="">
+				</label>
+				<input type="button" id='shop-create' value="Создать">
+			</form>
+
+			<div id="shop-container"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="classes.js"></script>
+	<script type="text/javascript" src="marketInterface.js"></script>
+</body>
+</html>
