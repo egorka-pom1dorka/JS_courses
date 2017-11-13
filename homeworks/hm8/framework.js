@@ -54,11 +54,11 @@ var _ = {
 	,pageLeft : function(el){
 		return el.getBoundingClientRect().left;
 	}
-	.css : function(el, prop, value = null){
+	,css : function(el, prop, value = null){
 		if(value !== null){
 			return getComputedStyle('el').prop;
 		}else{
-			el.style.prop = value;
+			el.style['prop'] = value;
 		}
 	}
 }
