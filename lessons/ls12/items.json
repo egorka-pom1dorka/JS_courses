@@ -1,0 +1,19 @@
+[
+	{
+		"name" : "Item 1",
+		"price" : 100.5,
+		"country" : "USA"
+	},
+
+	{
+		"name" : "Item 2",
+		"price" : 55,
+		"country" : "USSR"
+	},
+
+	{
+		"name" : "Item 3",
+		"price" : 99.99,
+		"country" : "China"
+	}
+]
