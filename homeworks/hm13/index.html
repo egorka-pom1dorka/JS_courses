@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 13</title>
+	<style>
+		input{
+			margin-bottom: 2px;
+		    padding: 5px 12px;
+		    background-color: white;
+		    border: 2px solid #ccc;
+		}
+		input:hover{
+			cursor: pointer;
+		}
+		.active{
+			background-color: #ccc;
+		}
+		p{
+		    margin: 3px 0;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="interface">
+		<input id='bold' type="button" value="Жирным">
+		<input id='cursive' type="button" value="Курсивом">
+		<input id='underline' type="button" value="Подчеркнутым">
+		<input id='hr' type="button" value='Горизонтальная линия'>
+		<input id='ul' type="button" value='Ненумерованный список'>
+		<input id='ol' type="button" value='Нумерованный список'>
+		<input id='align-left' type="button" value="По левому краю">
+		<input id='align-center' type="button" value="По центру">
+		<input id='align-right' type="button" value="По правому краю">
+		<input id='indent' type="button" value="Добавить отступ">
+		<input id='outdent' type="button" value="Удалить отступ">
+		<input id='link' type="button" value="Добавить ссылку">
+
+		<p></p>
+		<span>Размер шрифта</span>
+		<select name="font-size" id="font-size">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+		</select>
+		<span></span>
+		
+		<p></p>
+		<span>Шрифт</span>
+		<select name="font-name" id="font-name">
+			<option value="Arial">Arial</option>
+			<option value="Verdana">Verdana</option>
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="Comic Sans MS">Comic Sans MS</option>
+			<option value="Helvetica">Helvetica</option>
+			<option value="Garamond">Garamond</option>
+		</select>
+		<span></span>
+
+		<p></p>
+		<span>Цвет шрифтa</span>
+		<select name="font-color" id="font-color">
+			<option value="black">Черный</option>
+			<option value="red">Красный</option>
+			<option value="green">Зеленый</option>
+			<option value="white">Белый</option>
+			<option value="blue">Голубой</option>
+			<option value="gray">Серый</option>
+		</select>
+		<span></span>
+		
+		<p></p>
+		<span>Цвет фона</span>
+		<select name="font-back" id="font-back">
+			<option value="white">Белый</option>
+			<option value="black">Черный</option>
+			<option value="red">Красный</option>
+			<option value="green">Зеленый</option>
+			<option value="blue">Голубой</option>
+			<option value="gray">Серый</option>
+		</select>
+		<span></span>
+
+		<p></p>
+		<input id='reset' type="button" value="Очистить форматирование">
+	</div>
+
+	<div id="work-area">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis consequuntur iste eligendi commodi velit in praesentium ea, fugit nobis excepturi cupiditate quibusdam eius. Obcaecati ipsam vel porro blanditiis necessitatibus, praesentium quaerat numquam fuga.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum pariatur voluptas optio minima, fugiat quos nesciunt sunt cumque deserunt commodi, natus cupiditate sequi, quis voluptatibus! Aliquam cumque quia, ipsa iusto possimus natus fuga, pariatur aliquid magni cum sit corporis eaque quas laudantium explicabo maiores placeat repellat, omnis odit nisi impedit eos reprehenderit. Molestiae amet, excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae iure ab voluptas et labore praesentium illum vitae, tenetur, omnis voluptates illo repudiandae est veritatis iusto. Expedita adipisci laboriosam inventore non qui explicabo, fuga mollitia porro, odio. Explicabo ea reiciendis doloremque quo, amet minus in voluptas necessitatibus totam beatae rerum, recusandae ipsum repellat eum placeat rem, quidem? Amet, ab fuga laborum! Accusamus ratione placeat vero, corrupti voluptatum, facere numquam. Accusamus voluptatibus recusandae itaque illum, eligendi aspernatur dolores. Quas, dignissimos porro.</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
