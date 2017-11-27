@@ -1,0 +1,19 @@
+{
+	"title" : "Sport",
+	"items" : [
+		{
+			"title" : "item1",
+			"price" : 100
+		},
+
+		{
+			"title" : "item2",
+			"price" : 55
+		},
+
+		{
+			"title" : "item3",
+			"price" : 99.99
+		}
+	]
+}
