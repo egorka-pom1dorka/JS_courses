@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin: 30px 0 0 140px;
+    border-left: 2px solid #efefef;
+    padding: 0 30px;
+}
+
+h1, h2, h3, h4{
+	margin: 0;
+}
+
+#show-card{
+	cursor: pointer;
+}
+
+.totals{
+    position: fixed;
+    width: 140px;
+    height: 100vh;
+}
+
+.totals h4, h3{
+	padding: 5px 10px;
+}
+
+.submit{
+	color: black;
+    padding: 6px 12px;
+    background-color: white;
+    border: 2px solid #3498F6;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+.submit:hover{
+	background-color: #3498F6;
+	color: white;
+}
+
+.items{
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item{	
+	width: 360px;
+	margin: 20px 25px;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+    position: relative;
+}
+
+.item .title{
+	margin-bottom: 15px;
+}
+
+.item .image{
+	width: 100%;
+}
+
+.item .image img{
+	width: inherit;
+}
+
+.item .sizes{
+	font-size: 115%;
+	margin: 15px 0;
+}
+
+.item .price{
+	display: none;
+}
+
+.dark-overlay{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	overflow: auto;
+	left: 0;
+	top: 0;
+    background-color: white;
+	z-index: 1;
+}
+
+.dark-overlay .item{
+	z-index: 5;
+}
+
+.hidden{
+	display: none;
+}
+
+.dark-overlay h2{
+	padding: 5px 10px;
+}
+
+.item .add-items{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.3em;
+    background: white;
+    width: 350px;
+    height: 380px;
+    padding-top: 100px;
+}
+
+.item .add-items h3{
+	padding: 0;
+}
+
+.item .add-items .add-item{
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.item .add-items .add-item:hover{
+	text-decoration: underline;
+}
