@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fotos</title>
+	<style>
+		img{
+			display: none;
+		}
+		canvas{
+			border: 2px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+
+	<canvas width="200" height="200" id='canvas'></canvas>
+	<img src="img.jpg" id="image">
+	<div></div> 
+	<input type="button" value='Ч/Б' id="BW">
+	<input type="button" value="Негатив" id='neg'>
+	<input type="button" value="Сепия" id='sepia'>
+	
+	<script type="text/javascript" src="fotosHandler.js"></script>
+</body>
+</html>
