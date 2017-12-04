@@ -23,13 +23,26 @@ xhr.onload = function(){
 
 	var inputs = document.querySelectorAll('input[type=button]');
 	var len = inputs.length;
+	var intervals = [];
 
 	for(var i = 0; i < len; i++){
 		(function(x){
 
 			inputs[x].addEventListener('click', function(){
-				clearInterval(id);
+				var flag = false;
+
+				if(intervals[0]){
+					clearInterval(intervals[0]);
+					intervals.shift();
+					play.classList.remove('hide');
+					pause.classList.add('hide');
+					audio.pause();
+					audio.currentTime = 0;
+					flag = true;
+				}
+
 				audio = this.nextElementSibling;
+
 				document.querySelector('.played').style.width = "0%";
 		
 				document.querySelector('.buttons > span').innerText = items[x].title;
@@ -54,10 +67,16 @@ xhr.onload = function(){
 					document.querySelector('.played').style.width = width + "%";
 				}, 1);
 
+				intervals.push(id);
+
 				audio.addEventListener('ended', function(){
 					play.classList.toggle('hide');
 					pause.classList.toggle('hide');
 				});
+
+				audio.play();
+				play.classList.add('hide');
+				pause.classList.remove('hide');
 			});
 
 		})(i);
