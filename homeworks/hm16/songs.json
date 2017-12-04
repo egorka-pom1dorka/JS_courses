@@ -1,0 +1,19 @@
+[
+	{
+		"title" : "Мокрица - песня 1",
+		"cover" : "img/cover.jpg",
+		"path" : "songs/fanera1.mp3"
+	},
+
+	{
+		"title" : "Мокрица - песня 2",
+		"cover" : "img/cover1200.jpeg",
+		"path" : "songs/fanera2.mp3"
+	},
+
+	{
+		"title" : "Мокрица - песня 3",
+		"cover" : "img/coverdeluxe.jpg",
+		"path" : "songs/fanera3.mp3"
+	}
+]

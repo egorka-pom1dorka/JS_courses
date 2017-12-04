@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	width: 100%;
+}
+
+.audio-interface{
+	border-top: 1px solid #333;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.items{
+	margin: 15px 5%;
+}
+
+.play-line{
+	display: flex;
+	justify-content: space-between;
+}
+
+.play-duration{
+	cursor: pointer;
+	width: 90%;
+	border: 1px solid #333;
+	height: 15px;
+}
+
+.played{
+	width: 0%;
+	height: 15px;
+	background-color: red;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.buttons > *{
+	margin-right: 10px;
+}
+
+.buttons i{
+	cursor: pointer;
+    padding: 3px 7px;
+}
+
+.active{
+	box-shadow: 0 0 2px #bbb;
+}
+
+.hide{
+	display: none !important;
+}
+
+input{
+	outline: none;
+}
+
+img{
+	height: 25px;
+    width: 25px;
+}
+
+.song{
+	display: flex;
+	align-items: center;
+	margin: 15px 10px;
+}
+
+.song img{
+	height: 50px;
+	width: 50px;
+}
+
+.song *{
+	display: inline-block;
+	margin-right: 5px;
+}
