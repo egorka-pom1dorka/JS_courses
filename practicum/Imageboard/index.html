@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.post{
+			box-shadow: 0 0 4px 1px #ccc;
+			padding: 15px 25px;
+			margin: 40px 160px;
+		}
+		img{
+			max-width: 300px;
+		}
+		.container{
+			display: flex;
+			position: relative;
+		}
+		.active{
+			display: flex;
+			width: 600px;
+		    overflow: hidden;
+		}
+		.container input[value='x']{
+            position: absolute;
+		    left: 580px;
+		    top: 15px;
+		    padding: 5px 10px;
+		}
+		.container input{
+			display: none;
+		}
+		.images .image{
+			display: inline-block;
+		}
+		.active img{
+		    max-width: 600px;
+		}
+		.shadow{
+			box-shadow: 0 0 4px 2px #ccc;
+		}
+
+		.active .image{
+			transition: all 0.2s;
+			width: 600px;
+			/*display: flex;*/
+		    align-self: center;
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>ImageBoard</title>
+</head>
+<body>
+	<script src = 'http://www.youtube.com/iframe_api'></script>
+	<script type="text/javascript" src = 'script.js'></script>
+</body>
+</html>

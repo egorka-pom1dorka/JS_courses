@@ -1,0 +1,67 @@
+[
+	{
+		"id" : 1,
+		"text": "Привет, я тут первый раз, что делаете?",
+		"video": "",
+		"date": "05.09.2017",
+		"author": "SneAkkky",
+		"imgs" : [],
+		"likes" : {
+			"amount" : 3,
+			"names" : ["Alex", "Ivan", "Evgen"]
+		},
+		"audio" : []
+	},
+	{
+		"id" : 2,
+		"text": "Hello, speak English?",
+		"video": "",
+		"date": "06.09.2017",
+		"author": "Trevor",
+		"imgs" : ["img1.jpg", "img2.jpg", "img3.jpg"],
+		"likes" : {
+			"amount" : 0,
+			"names" : []
+		},
+		"audio" : []
+	},
+	{
+		"id" : 3,
+		"text": "Кто хочет зарабатывать, работая 2-3 часа в день переходим по ссылке: 'ссылка'",
+		"video": "",
+		"date": "06.09.2017",
+		"author": "buisnessMannnn",
+		"imgs" : [],
+		"likes" : {
+			"amount" : 1,
+			"names" : ["Petr"]
+		},
+		"audio" : []
+	},
+	{
+		"id" : 4,
+		"text": "Посмотрите это видео!!!!",
+		"video": "<iframe id = 'iframe' width='560' height='315' src='https://www.youtube.com/embed/Q1p8i1DF3jY?enablejsapi=1' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>",
+		"date": "07.09.2017",
+		"author": "gOd",
+		"imgs" : [],
+		"likes" : {
+			"amount" : 0,
+			"names" : []
+		},
+		"audio" : []
+	},
+	{
+		"id" : 5,
+		"text": "These Tracks are awesome!!!!!",
+		"video": "",
+		"audio": ["Nicki Taylor - Here Comes Vi.mp3", "Nightcore - Cocaine.mp3", "The Bosshoss - Whatever.mp3"],
+		"date": "08.09.2017",
+		"author": "panthera",
+		"imgs" : [],
+		"likes" : {
+			"amount" : 0,
+			"names" : []
+		}
+	}
+]
